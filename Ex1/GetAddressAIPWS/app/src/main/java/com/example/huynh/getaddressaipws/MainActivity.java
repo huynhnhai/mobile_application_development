@@ -48,9 +48,10 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"Long or Latitude is null", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    txtAddress.setText("       Waiting...");
-                    String url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=" +
+
+                    final String url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=" +
                             etxtLat.getText() + ", " + etxtLong.getText() + "&sensor=true";
+                    txtAddress.setText(" Request from "+url+"\n\n      Waiting...");
                     JsonObjectRequest objectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
                             new Response.Listener<JSONObject>() {
                                 @Override
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                                         JSONArray array = response.getJSONArray("results");
                                         JSONObject object = array.getJSONObject(0);
                                         String address = object.getString("formatted_address");
-                                        txtAddress.setText("Address is: " + address);
+                                        txtAddress.setText(" Request from "+url+"\n\nAddress is: " + address);
                                     } catch (JSONException e) {
                                         txtAddress.setText("Có lỗi trong lúc yêu cầu, mời thực hiện lại!");
 
