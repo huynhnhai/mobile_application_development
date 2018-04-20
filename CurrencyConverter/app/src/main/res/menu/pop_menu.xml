@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/it_VND"
+        android:title="VND"></item>
+    <item android:id="@+id/it_USD"
+        android:title="USD"></item>
+    <item android:id="@+id/it_EUR"
+        android:title="EUR"></item>
+    <item android:id="@+id/it_AUD"
+        android:title="AUD"></item>
+    <item android:id="@+id/it_BRL"
+        android:title="BRL"></item>
+    <item android:id="@+id/it_CAD"
+        android:title="CAD"></item>
+    <item android:id="@+id/it_CNY"
+        android:title="CNY"></item>
+    <item android:id="@+id/it_INR"
+        android:title="INR"></item>
+    <item android:id="@+id/it_JPY"
+        android:title="JPY"></item>
+    <item android:id="@+id/it_MXN"
+        android:title="MXN"></item>
+    <item android:id="@+id/it_MYR"
+        android:title="MYR"></item>
+    <item android:id="@+id/it_PEN"
+        android:title="PEN"></item>
+    <item android:id="@+id/it_QAR"
+        android:title="QAR"></item>
+    <item android:id="@+id/it_RON"
+        android:title="RON"></item>
+</menu>
